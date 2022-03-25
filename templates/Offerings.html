@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offerings</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='offerings.css')}}">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="picture">
+                <img src="{{ url_for('static', filename='offering.jpg')}}" alt="">
+            </div>
+            <div class="arrow"> <i class="fas fa-arrow-left"></i> </div>
+        </div>
+        <div class="right">
+            <h1 class="heading">Payment Details</h1>
+            <form action="">
+                <div class="row">
+                    <p>Choose Payment Method</p>
+                    <div class="select-card">
+                        <img src="{{ url_for('static', filename='master-card.jpg')}}" alt="">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+                <div class="row">
+                    <p>Cardholder's Name</p>
+                    <div class="txt-inp">
+                        <input type="text" placeholder="Baah Peprah Enock">
+                    </div>
+                </div>
+                <div class="row">
+                    <p>Expiry Date</p>
+                    <div class="txt-inp">
+                        <input type="text" placeholder="MM/YY">
+                    </div>
+                </div>
+                <div class="row">
+                    <p>Card Number</p>
+                    <div class="txt-inp">
+                        <input type="text" placeholder="***** ****** *****">
+                    </div>
+                </div>
+                <div class="row">
+                    <p>CVV/CVC</p>
+                    <div class="txt-inp">
+                        <input type="password">
+                    </div>
+                </div>
+            </form>
+            <div class="next-step">
+                <p>Submit</p>
+                <i class="fas fa-arrow-right "></i>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

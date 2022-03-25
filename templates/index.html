@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKPOBASA GLOBAL MINISTRY</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+</head>
+<body>
+ 
+    <header class="header " id="home">
+        <div class="header__nav-bar">
+            <img src="{{ url_for('static', filename='logo.jpg')}}" class="logo" >
+            <ul>
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{ url_for('home_page')}}">Home</a></li>
+                <li class="nav-item active">
+                    <a href="{{ url_for('about_page')}}">About</a></li>
+                <li class="nav-item active">
+                    <a href="#">services</a></li>
+                <li class="nav-item active">
+                    <a href="#">contact us</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>AKPOBASA GLOBAL MINISTRY</h1>
+            <p>The lord is our shepherd</p>
+            <div>
+               <a href="{{ url_for('video_page')}}"><button type="button"><span></span> Watch tv</button></a>
+                <a href="{{ url_for('offering')}}"><button type="button"><span></span> Offerings</button></a>
+            </div>
+        </div>
+    </header>
+    <main>
+      
+      
+        
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <div id="about" class="about">
+        <div class="about__container">
+            <div class="about__section">
+                <div class="title">
+                    <h2>About the founder and leader</h2>
+                </div>
+                <div class="about__content">
+                    <p> Apostle Oduma Akpobasa is the founder and President in council of Akpobasa Global Ministries with its 
+                        Headquarters located in the Metropolitan city of Toronto, Canada. In 2011, Apostle Odum was commissioned by the Holy Ghost
+                        to establish Akpobasa Global Ministries in Toronto, Canada. Since then, they have been carrying out this mandate through
+                        the preaching and teaching of faith for the liberation and blessings of humanity!
+                    </p>
+                    <p>
+                        Apostle Oduma ministers under a strong prophetic anointing; thousands have testified to being healed from cancers and other
+                        serious diseases, countless have received various miracles as the power of God is demonstrated through his son. He is a 
+                        seasoned speaker at many seminars and conventions both locally and internationally. He is blissfully married to Pastor E.Akpobasa
+                        for over 25 years and they are blessed with four children. 
+                    </p>
+                    <div class="about__button">
+                        <a href="">Read More</a>
+                    </div>
+                </div>
+                <div class="about__social">
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="image-section">
+                <img src="{{ url_for('static', filename='img1.jpg')}}" alt="A Picture of the founder of the church">
+            </div>
+        </div>
+       
+      
+    </div>
+</body>
+</html>
